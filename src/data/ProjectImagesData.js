@@ -1,12 +1,12 @@
-import Image1 from '../assets/photos/project-images/IMG_0010.jpg'
-import Image2 from '../assets/photos/project-images/IMG_0016.jpg'
-import Image3 from '../assets/photos/project-images/IMG_0018.jpg'
-import Image4 from '../assets/photos/project-images/IMG_0026.jpg'
-import Image5 from '../assets/photos/project-images/IMG_0027.jpg'
-import Image6 from '../assets/photos/project-images/IMG_0034.jpg'
-import Image7 from '../assets/photos/project-images/IMG_0046.jpg'
-import Image8 from '../assets/photos/project-images/IMG_0052.jpg'
-import Image9 from '../assets/photos/project-images/IMG_0056.jpg'
+import Image1 from '../assets/photos/project-images/IMG_0010.JPG'
+import Image2 from '../assets/photos/project-images/IMG_0016.JPG'
+import Image3 from '../assets/photos/project-images/IMG_0018.JPG'
+import Image4 from '../assets/photos/project-images/IMG_0026.JPG'
+import Image5 from '../assets/photos/project-images/IMG_0027.JPG'
+import Image6 from '../assets/photos/project-images/IMG_0034.JPG'
+import Image7 from '../assets/photos/project-images/IMG_0046.JPG'
+import Image8 from '../assets/photos/project-images/IMG_0052.JPG'
+import Image9 from '../assets/photos/project-images/IMG_0056.JPG'
 
 export const projectImagesData = [
     {
