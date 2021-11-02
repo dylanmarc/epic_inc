@@ -1,7 +1,7 @@
-import DylanImage from '../assets/photos/employees/dylan-buht.png'
-import RaviImage from '../assets/photos/employees/ravi-ree.png'
-import GeorgeImage from '../assets/photos/employees/george-dart.png'
-import TheoImage from '../assets/photos/employees/theo-hat.png'
+import DylanImage from '../assets/photos/employees/dylan-buht.jpg'
+import RaviImage from '../assets/photos/employees/ravi-ree.jpg'
+import GeorgeImage from '../assets/photos/employees/george-dart.jpg'
+import TheoImage from '../assets/photos/employees/theo-hat.jpg'
 
 
 export const employeeData = [

@@ -1,12 +1,12 @@
-import Image1 from '../assets/photos/project-images/IMG_0010.png'
-import Image2 from '../assets/photos/project-images/IMG_0016.png'
-import Image3 from '../assets/photos/project-images/IMG_0018.png'
-import Image4 from '../assets/photos/project-images/IMG_0026.png'
-import Image5 from '../assets/photos/project-images/IMG_0027.png'
-import Image6 from '../assets/photos/project-images/IMG_0034.png'
-import Image7 from '../assets/photos/project-images/IMG_0046.png'
-import Image8 from '../assets/photos/project-images/IMG_0052.png'
-import Image9 from '../assets/photos/project-images/IMG_0056.png'
+import Image1 from '../assets/photos/project-images/IMG_0010-opt.jpg'
+import Image2 from '../assets/photos/project-images/IMG_0016-opt.jpg'
+import Image3 from '../assets/photos/project-images/IMG_0018-opt.jpg'
+import Image4 from '../assets/photos/project-images/IMG_0026-opt.jpg'
+import Image5 from '../assets/photos/project-images/IMG_0027-opt.jpg'
+import Image6 from '../assets/photos/project-images/IMG_0034-opt.jpg'
+import Image7 from '../assets/photos/project-images/IMG_0046-opt.jpg'
+import Image8 from '../assets/photos/project-images/IMG_0052-opt.jpg'
+import Image9 from '../assets/photos/project-images/IMG_0056-opt.jpg'
 
 export const projectImagesData = [
     {
