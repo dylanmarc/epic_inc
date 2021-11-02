@@ -60,7 +60,7 @@ const EmployeeCard = styled.div`
 
 const EmployeeImg = styled.img`
     border: 2px solid #FFF7EE;
-    min-width: 200px;
+    width: 200px;
     height: 200px;
     border-radius: 100%;
     box-shadow: -5px 10px 20px -5px #000;
@@ -68,8 +68,8 @@ const EmployeeImg = styled.img`
     animation: fadein 3s;
 
     @media screen and (max-width: 768px) {
-        width: 15vw;
-        height: 50vw;
+        width: 40vw;
+        height: 40vw;
         margin-top: 30px;
     }
 
