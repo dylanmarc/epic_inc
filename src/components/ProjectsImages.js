@@ -35,7 +35,7 @@ const ProjectImg = styled.img`
 
     &:hover{
         opacity: 0.75;
-        transform: translateY(-2px);
+        transform: scale(1.05);
         border: 1px solid #fff;
     }
 `
