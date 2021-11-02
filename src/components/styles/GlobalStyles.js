@@ -11,4 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     html {
         background-color: #131d2e;
     }
+
+    video::-internal-media-controls-overlay-cast-button {
+        display: none;
+    }
 `
