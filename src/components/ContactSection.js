@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import { SectionTitle } from './SectionTitle'
@@ -8,22 +8,38 @@ import Video from '../assets/videos/email_data.mp4'
 import { Button } from './Button'
 
 const ContactSection = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(email, name, message);
+        // clearing the values
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
+
     return (
         <ContactContainer>
             <SectionTitle>CONTACT US</SectionTitle>
             <HorizontalDivider />
             <ContactContent>
                 <EmailP>Send us a message</EmailP>
-                <EmailForm>
+                <EmailForm id="emailForm">
                     <EmailInputs>
-                        <EmailInput name="name" first="true" placeholder="Name" />
-                        <EmailInput name="email" placeholder="Email" />
+                        <EmailInput name="name" first="true" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+                        <EmailInput name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     </EmailInputs>
                     <div>
-                        <EmailTextarea name="message" placeholder="Message" />
+                        <EmailTextarea name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
                     </div>
                     <div>
-                        <SubmitButton>Submit</SubmitButton>
+                        <SubmitButton onClick={handleSubmit}>
+                            Submit
+                        </SubmitButton>
                     </div>
                 </EmailForm>
                 <OrLine />
