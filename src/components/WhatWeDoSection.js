@@ -13,7 +13,7 @@ const WhatWeDoSection = () => {
             <HorizontalDivider />
             <WWDContent>
                 <FadeIn>
-                    <WWDVideo src={Video} type="video/mp4" autoPlay loop muted playsInline />
+                    <WWDVideo src={Video} type="video/mp4" autoPlay loop muted playsInline disableRemotePlayback />
                     <WWDTxt>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus.
                     </WWDTxt>
