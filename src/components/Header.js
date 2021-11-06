@@ -32,14 +32,16 @@ const Header = () => {
   return (
     <>
       <Nav>
-        <NavLink to="/"><Logo /></NavLink>
+        <NavLink logo="true" to="/"><Logo /></NavLink>
         {showMenu ? closeIcon : barIcon}
         <NavMenu>
           {menuData.map((item, index) => (
+            <>
             <NavLink to={item.link} key={index}>
               {item.title}
-              {index < menuData.length-1 ? <NavSeperator/> : ''}
             </NavLink>
+            {index < menuData.length-1 ? <NavSeperator/> : ''}
+            </>
           ))
         }
         </NavMenu>
@@ -70,6 +72,17 @@ const MobileMenu = styled.div`
     width: 100%;
     height: 600px;
     background-color: #070b11;
+
+    animation: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) slideInFromTop;
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 `
 
@@ -81,13 +94,16 @@ const MobileNavLink = styled(Link)`
   font-size: 3rem;
   text-decoration: none;
   margin: 0.5rem 0;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 1.5rem;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 
   &:hover {
-    background: #077BF1;
+    /* border-top: 1px solid #273C5C;
+    border-bottom: 1px solid #273C5C; */
+    border-left: 1px solid #273C5C;
+    border-right: 1px solid #273C5C;
     transform: translateY(-2px);
   }
 `
@@ -100,7 +116,7 @@ const MobileNavSeperator = styled.div`
 `
 
 const NavSeperator = styled.div`
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   width: 1px;
   background-color: #FFF7EE;
   height: 50%;
@@ -114,11 +130,15 @@ const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1300px) /2);
   position: relative;
   box-shadow: 0px 0px 10px 0px #000;
+
+  z-index: 200;
 `
 
 const NavLink = styled(Link)`
   color: #FFF7EE;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
@@ -126,8 +146,19 @@ const NavLink = styled(Link)`
   cursor: pointer;
   transition: 0.3s;
 
-  &:hover {
-    text-decoration: underline;
+  /* Fade in */
+  &::after {
+    content: '';
+    width: 0%;
+    height: 0.1em;
+    background: #5a8cdb;
+    opacity: 0;
+    transition: 300ms;
+  }
+  &:hover::after,
+  &:focus::after {
+    width: ${({logo}) => (logo ? '0' : '100%')};
+    opacity: 1;
   }
 `
 
